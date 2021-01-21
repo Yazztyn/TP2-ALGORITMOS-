@@ -1,7 +1,12 @@
 import facebook_pruebas
+import facebook
 
 def menu():
+
+    token = "EAAFvxufavv0BAOh41PazAEmjHaiZAqzEhw8TKVZBZBoBHUc5OvJuK57rkMdlah4VZAui3ZBpsZCLZAjCfCSMvy28wMTagAsoDZBurS9LP6ZAkAjh9AfGovrH1ZCR327y88yqF7Sdi0Sj4S8nZC034pqcukiWSOFbzQArb5MEqRldq57BQPmBvsPjtGw6GD66PgCB4cfOU63vEEA1xygsw08wrnZB"
+   
     condicion = True
+    
     while condicion:
         # Desplegamos el menú   
         print("""
@@ -27,14 +32,15 @@ def menu():
             condicion = False
         elif eligio== "2":
             print("Usted eligió: Dar likes a posteos")
-            facebook_pruebas.likear()
+            facebook_pruebas.likear(token)
             condicion = False
         elif eligio== "3":
             print("Usted eligió: Leer posteos")
             condicion = False
         elif eligio== "4":
             print("Usted eligió: Subir posteo")
-            facebook_pruebas.posteo()
+            mensaje = input("Ingrese e texto que quiere postear: ")
+            facebook_pruebas.posteo(token,mensaje)
             condicion = False
         elif eligio == "5":
             print("Usted eligió: Actualizar un posteo")
@@ -52,9 +58,11 @@ def menu():
             print("Usted eligió: Actualizar datos del perfil")
             condicion = False
         elif eligio == "10":
-            facebook_pruebas.comentar()
+            print("Usted eligió: Comentar un posteo")
+            mensaje = input("Ingrese el texto que quiere comentar: ")
+            facebook_pruebas.comentar(token,mensaje)
             condicion = False 
         elif eligio == "11":
-            facebook_pruebas.postear_foto()
+            facebook_pruebas.postear_foto(token)
         else:
             print("Error: El numero ingresado no es el correcto. Vuelva a intentarlo")
