@@ -16,3 +16,25 @@ chista
 que es eso?
 chiste
 No se ninguno hasta el momento.
+opciones
+Aqui esta el menu de opciones:
+postear
+Aqui esta el menu de opciones:
+postear foto
+Aqui esta el menu de opciones:
+subir posteo
+Aqui esta el menu de opciones:
+dar like
+Aqui esta el menu de opciones:
+likear
+Aqui esta el menu de opciones:
+comentar
+Aqui esta el menu de opciones:
+comentar posteo
+Aqui esta el menu de opciones:
+facebook
+Aqui esta el menu de opciones:
+buscar usuario
+Aqui esta el menu de opciones:
+cuantos años tenes?
+Soy muy joven, apenas un mes desde mi creacion :D
