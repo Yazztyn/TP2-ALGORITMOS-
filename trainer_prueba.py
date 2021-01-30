@@ -1,12 +1,12 @@
 def ingreso(frase):    
 
-    with open("trainer_testing_1.txt", "a") as archivo:
+    with open("trainer.txt", "a") as archivo:
         archivo.write(frase + "\n")
     return archivo
 
 def listar_frases():
     lista = []
-    with open("trainer_testing_1.txt","r") as archivo:
+    with open("trainer.txt","r") as archivo:
         for linea in archivo:
             lista.append(linea.strip("\n"))        
     return lista 
