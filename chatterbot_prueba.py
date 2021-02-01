@@ -1,7 +1,7 @@
 import chatterbot
 from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
-import menu_prueba1
+import menu_prueba
 import time
 
 def log(mensaje):
@@ -16,7 +16,7 @@ def main():
     chatbot = ChatBot("Tester")
 
     training = []
-    with open("trainer_testing_1.txt","r") as archivo:
+    with open("trainer.txt","r") as archivo:
         for linea in archivo:
             training.append(linea.strip("\n"))
 
@@ -51,6 +51,6 @@ def main():
             log(bot)
             print("Crux: ",respuesta)
         
-            menu_prueba1.menu()
+            menu_prueba.menu()
 main()           
             
