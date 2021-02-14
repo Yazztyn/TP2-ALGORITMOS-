@@ -32,6 +32,14 @@ def postear_foto(token,mensaje,imagen):
     graph = facebook.GraphAPI(access_token=token, version="2.8")
     foto = graph.put_photo(image=open(imagen, 'rb'),message=mensaje)
     
+def obtener_id(token):
+    graph = facebook.GraphAPI(access_token=token, version="2.8")
+    id_propio = graph.get_object(id = 'me', fields = 'id')
+    return id_propio
+
+# def main():
+#     token = "EAAFvxufavv0BAJnIyPLGgQbGoE9ZCTYOH6WOEgYLSL6jJaGKOGESvzOKV6J2jtRbVZCkkHusKZBQ9duCwqZAOsv6iTfxl5T8fGGtWcjeob2DbT2T9jTUFLzmJholsQ1QZAZBv07YddJIgcmKjZCHOhAQg1jBeDVT9cnKzGyKQ96VG1stVOrRsrajUdxle82Ehsj8Ln96c6zoQZDZD"
+#     print(obtener_id(token))
 
 
-
+# main()    
