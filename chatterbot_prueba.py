@@ -27,30 +27,50 @@ def main():
     continuar = True
 
     while continuar:
+        
         entrada = input("Usuario: ").lower()
         user = "Usuario: " + entrada
         log(user)
-        respuesta = chatbot.get_response(entrada)
-        bot = "Crux: " + str(respuesta) 
-        log(bot)
-        print("Crux: ",respuesta)
-        
-        
-        if entrada == "chau":
-            respuesta = chatbot.get_response(entrada)
-            bot = "Crux: " + str(respuesta) 
-            log(bot)
-            print("Crux: ",respuesta)
-        
-            continuar = False
-
-
-        elif entrada == "menu":
-            respuesta = chatbot.get_response(entrada)
-            bot = "Crux: " + str(respuesta) 
-            log(bot)
-            print("Crux: ",respuesta)
-        
-            menu_prueba.menu()
-main()           
+       
+        for palabra in entrada:
+            if not palabra in training:
+                no_entendio = "Disculpe no comprendo lo que escribió, no estoy lo suficientemente entrenado para entender"
+                bot = "Crux: " + no_entendio 
+                log(bot)
+                print(bot)
+                bot = "Crux: Intente nuevamente,con algo diferente." 
+                log(bot)
+                print(bot)
+                entrada = input("Usuario: ").lower()
+                user = "Usuario: " + entrada
+                log(user)
+                
             
+            else:    
+                respuesta = chatbot.get_response(entrada)
+                bot = "Crux: " + str(respuesta) 
+                log(bot)
+                print("Crux: ",respuesta)
+                
+                
+                if "chau" in entrada or "salir" in entrada:
+                    respuesta = chatbot.get_response(entrada)
+                    bot = "Crux: " + str(respuesta) 
+                    log(bot)
+                    print("Crux: ",respuesta)
+            
+                    continuar = False
+
+
+                elif "menu" in entrada:
+                    respuesta = chatbot.get_response(entrada)
+                    bot = "Crux: " + str(respuesta) 
+                    log(bot)
+                    print("Crux: ",respuesta)
+                
+                    menu_prueba.menu()
+
+            
+
+
+main()
