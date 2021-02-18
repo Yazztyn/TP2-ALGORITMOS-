@@ -1,7 +1,7 @@
 import chatterbot
 from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
-import menu_prueba
+import menu
 import time
 import facebook
 import facebook_crux
@@ -60,8 +60,8 @@ def main():
 
 
         elif "menu de opciones" in entrada or "menu" in entrada or "opciones" in entrada:
-            menu_prueba.menu(token)
-
+            menu.menu(token)
+        
         try:
 
             if "postear foto fb" in entrada:
