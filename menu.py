@@ -208,7 +208,7 @@ def menu(token):
                     print(menu_instagram) 
                     eligio = int(input("Ingrese el numero de la opcion que desea: "))
 
-        except requests.exceptions.ConnectionError or urllib3.exceptions.MaxRetryError or urllib3.exceptions.NewConnectionError or socket.gaierror:
+        except facebook.GraphAPIError or requests.exceptions.ConnectionError or urllib3.exceptions.MaxRetryError or urllib3.exceptions.NewConnectionError or socket.gaierror:
 
             if facebook.GraphAPIError:
                 print("Token de acceso de página incorrecto o expirado.\nIntente ingresando un nuevo token.\nRecuerde que hay una explicacion en README.txt.")
