@@ -14,9 +14,7 @@ Pillow
 
 ACLARACIÓN: en caso de que ocurra algún error con las librerias, se recomienda realizar un downgrade a Python 3.7
 
-Primeros pasos
-
-bla bla
+En caso de que salte error de token, seguir las instrucciones de token_nuevo.pdf
 
 ¿Quienes somos?
 
