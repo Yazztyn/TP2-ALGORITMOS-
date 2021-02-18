@@ -20,7 +20,7 @@ def log(mensaje):
 
 def main():
     
-    token = "EAAFvxufavv0BAFEfNjsWKR4kaGy7oYQu0eXmNmf2TL6gX1nEjxzkvZBAGBpY59AoFwZARLHkT2ZAaZBMg35LZCpaG0uIOy6SrHjHbVMh4SZBHaazDKMZC3ZCt6VR0JcE2PFAK0OP3aN4vUuXoHI0WUbiZCseLaZB2OVP1ZCBeq1ZCFnt3XA0PGNvD2JfvTp16kQWR7EZD"
+    token = "EAAFvxufavv0BABrxq2Crr7qfjtFG2cYLMcWRIgwNQivS2HU7A4SZBHkWbZBfGBfazF2dE8rYyc3Cw7OZA9F0H4Jy0ZCImmJhwYlqUh5cZC7uW4w9L4vr5Hpq2EBrw67WbIzrB6ctFTG87RhK6rHw1lPAy3ti2F6fLKL832VdwPIkMmqWg6TcZCs6hVRyVRZAMIcErq2joWZBHgZDZD"
     
     no_entendio = "Disculpe no comprendo lo que escribió, no estoy lo suficientemente entrenado para entender.\nIntente nuevamente con algo diferente."
     
