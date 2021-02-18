@@ -1,8 +1,8 @@
-hola crux, como te va?
+hola crux, como te vas
 Hola, todo bien por aca.
 hola
 Hola!
-como estas?
+como estas
 Bien,vos?
 todo bien
 Me alegro :)
@@ -11,7 +11,7 @@ Hasta luego!
 salir
 Gracias por usar Crux, hasta la proxima!
 menu
-Aqui estan sus opciones:
+Aqui esta el menu de opciones:
 chista
 que es eso?
 chiste
