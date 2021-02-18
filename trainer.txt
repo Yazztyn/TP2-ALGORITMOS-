@@ -1,48 +1,86 @@
-hola crux, como te vas
+hola crux,como te va
 Hola, todo bien por aca.
 hola
 Hola!
 como estas
-Bien,vos?
+Bien, vos?
 todo bien
 Me alegro :)
+bien
+Me alegro :)
+mal
+u.u 
 chau
-Hasta luego!
+Hasta luego! Gracias por usar Crux AJ.
 salir
 Gracias por usar Crux, hasta la proxima!
+opciones
+Si desea hacer algo mas escriba lo que desea hacer.
 menu
-Aqui esta el menu de opciones:
-chista
-que es eso?
+Si desea hacer algo mas escriba lo que desea hacer.
+menu de opciones
+Si desea hacer algo mas escriba lo que desea hacer.
+sabes un chiste
+No se ninguno hasta el momento.
 chiste
 No se ninguno hasta el momento.
-opciones
-Aqui esta el menu de opciones:
+contame un chiste
+No se ninguno hasta el momento.
 postear
-Aqui esta el menu de opciones:
+Unicamente se puede hacer posteos en Facebook, puede postear un texto o una foto. Si quiere postear en Facebook escriba postear foto fb o postear texto fb segun lo que desea. Si no, le puedo mostrar las opciones disponibles que tiene, para eso escriba menu, opciones o menu de opciones.
 postear foto
-Aqui esta el menu de opciones:
+Unicamente se pueden postear fotos en Facebook. Si quiere postear una foto en Facebook escriba postear foto fb. Si no, le puedo mostrar las opciones que tiene disponibles, para eso escriba menu, menu de opciones u opciones.
 subir posteo
-Aqui esta el menu de opciones:
+Unicamente se puede hacer posteos en Facebook, puede postear un texto o una foto. Si quiere postear en Facebook: escriba postear foto fb o postear texto fb, segun lo que desea hacer. Si no, le puedo mostrar las opciones que tiene disponibles: para esto escriba menu, menu de opciones u opciones.
 dar like
-Aqui esta el menu de opciones:
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
 likear
-Aqui esta el menu de opciones:
-comentar
-Aqui esta el menu de opciones:
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
+poner like
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones
+dar me gusta
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
+poner me gusta
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
+me gustear
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
+like
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
+me gusta
+Unicamente se puede dar like a un posteo de Facebook. Si desea dar like a un posteo de Facebook escriba: like fb. Si no, le puedo mostar las opciones que tiene disponibles, para eso escriba: menu, opciones o menu de opciones.
 comentar posteo
-Aqui esta el menu de opciones:
+Unicamente se puede comentar un posteo de Facebook. Si desea comentar un posteo de Facebook escriba: comentar fb. Si no, le puedo mostrar las opciones que tiene disponibles que tiene, para eso escriba: menu, menu de opciones y opciones.
+comentar
+Unicamente se puede comentar un posteo de Facebook. Si desea comentar un posteo de Facebook escriba: comentar fb. Si no, le puedo mostrar las opciones que tiene disponibles que tiene, para eso escriba: menu, menu de opciones y opciones.
+hacer comentario
+Unicamente se puede comentar un posteo de Facebook. Si desea comentar un posteo de Facebook escriba: comentar fb. Si no, le puedo mostrar las opciones que tiene disponibles que tiene, para eso escriba: menu, menu de opciones y opciones.
 facebook
-Aqui esta el menu de opciones:
-buscar usuario
-Aqui esta el menu de opciones:
-cuantos años tenes?
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+instagram
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+face
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+insta
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+fb
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+ig
+Si desea que le muestre las opciones que tiene disponibles escriba: menu, menu de opciones u opciones.
+cuantos años tenes
+Soy muy joven, apenas un mes y pico desde mi creacion :D
+que edad tenes
 Soy muy joven, apenas un mes desde mi creacion :D
 que hora es
-La hora actual es: 
+La hora actual es:
 que fecha es hoy
-la fecha de hoy es:
-fecha y hora
-La fecha y hora actuales: 
+Hoy es:
+que dia es hoy
+Hoy es:
 como te llamas
 Mi nombre es Crux :)
+como es tu nombre
+Mi nombre es Crux :D
+listo
+Si desea hacer algo mas escriba lo que desea hacer.
+eso es todo
+Si desea hacer algo mas escriba lo que desea hacer.
