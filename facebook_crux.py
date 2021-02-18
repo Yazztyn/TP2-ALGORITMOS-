@@ -35,7 +35,7 @@ def likear(token,id):
     graph.put_like(object_id=id)
       
 def posteo(token,mensaje):
-     """ Pre: Ingresa el token y el mensaje que acompaña el mismo por parámetro
+    """ Pre: Ingresa el token y el mensaje que acompaña el mismo por parámetro
         Post: Publica un estado en Facebook
     """
     graph = facebook.GraphAPI(access_token=token, version="2.8")
