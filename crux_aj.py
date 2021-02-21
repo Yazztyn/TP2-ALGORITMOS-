@@ -17,10 +17,9 @@ def log(mensaje):
     with open("archivo.log_bot","a") as otro_archivo:
         otro_archivo.write(fecha + "," + hora +"," + mensaje +"\n") 
 
-
 def main():
     
-    token = "EAAFvxufavv0BABrxq2Crr7qfjtFG2cYLMcWRIgwNQivS2HU7A4SZBHkWbZBfGBfazF2dE8rYyc3Cw7OZA9F0H4Jy0ZCImmJhwYlqUh5cZC7uW4w9L4vr5Hpq2EBrw67WbIzrB6ctFTG87RhK6rHw1lPAy3ti2F6fLKL832VdwPIkMmqWg6TcZCs6hVRyVRZAMIcErq2joWZBHgZDZD"
+    token = "EAAFvxufavv0BAM0AVZCIuvyvu0tMNSR00KaOwCpB9WikZAkd4yZByDVXYGKbkCm98sZAW5EpE2a9hZCyrLTew7hMHnou8PibZBknQuaD0zL9uxY3amNarntnhm2uMLGJbHFUH7dOgFUvdKTBS2H9Iv1XdnbBAO28ZCDm16DQQaQ2mJlfsFf1lxQCehhYbkw8ieoX3ZCjFl1t3gZDZD"
     
     no_entendio = "Disculpe no comprendo lo que escribió, no estoy lo suficientemente entrenado para entender.\nIntente nuevamente con algo diferente."
     
@@ -34,6 +33,7 @@ def main():
                 ])
 
     training = []
+    
     with open("trainer.txt","r") as archivo:
         for linea in archivo:
             training.append(linea.strip("\n"))
@@ -42,12 +42,34 @@ def main():
 
     trainer.train(training)
 
-    continuar = True
+    continuar = True    
+
+    print("\n¿Desea ver la lista de preguntas y respuestas de Crux?, si/no")
+    eleccion = input("\nEscriba 'si' o 'no', segun lo que desea hacer: ").lower()
+
+    if eleccion == "si":
+
+        for frase in range(len(training)):
+            
+            if frase % 2 == 0:
+                print("\nIngreso del usuario: ",training[frase])
+            
+            else:
+                print("\nRespuesta de Crux: ", training[frase])    
+    
+    while eleccion != "si" and eleccion != "no":
+        print("\nError, intente nuevamente")
+        print("\n¿Desea ver la lista de preguntas y respuestas de Crux?")
+        eleccion = input("\nEscriba 'si' o 'no', segun lo que desea hacer: ")
+    
+    usuario = input("\nIngrese su nombre: ").capitalize()
+    
+    print(f"\n\n¡¡{usuario}, bienvenido a Crux!!\nPara empezar escriba cualquier cosa que desea.")
 
     while continuar:
         
-        entrada = input("Usuario: ").lower()
-        user = "Usuario: " + entrada
+        entrada = input(f"\n{usuario}: ").lower()
+        user = usuario + ":" + " " + entrada
         log(user)
 
         if "chau" in entrada or "salir" in entrada:
@@ -58,10 +80,34 @@ def main():
     
             continuar = False
 
-
         elif "menu de opciones" in entrada or "menu" in entrada or "opciones" in entrada:
+            
             menu.menu(token)
         
+        elif "que hora es" in entrada or "hora" in entrada:
+            
+            hora = time.strftime("%H:%M:%S")
+            respuesta = chatbot.get_response(entrada)
+            respuesta = str(respuesta) + " " + str(hora)
+            bot = "Crux: " + respuesta
+            log(bot)
+            print("Crux: ",respuesta)
+
+        elif "que dia es hoy" in entrada or "fecha" in entrada or "que fecha es hoy" in entrada:
+
+            fecha = time.strftime("%d/%m/%y")
+            respuesta = chatbot.get_response(entrada)
+            respuesta = str(respuesta) + " " + str(fecha)
+            bot = "Crux: " + respuesta
+            log(bot)
+            print("Crux: ",respuesta)
+            
+        else: 
+            respuesta = chatbot.get_response(entrada)
+            bot = "Crux: " + str(respuesta) 
+            log(bot)
+            print("\nCrux: ",respuesta)
+
         try:
 
             if "postear foto fb" in entrada:
@@ -120,18 +166,20 @@ def main():
                 mensaje = input("\nIngrese el texto que quiere comentar: ")
                 facebook_crux.comentar(token,mensaje,id)
 
+            else: 
+                respuesta = chatbot.get_response(entrada)
+                bot = "Crux: " + str(respuesta) 
+                log(bot)
+                print("\nCrux: ",respuesta)
+
         except facebook.GraphAPIError or requests.exceptions.ConnectionError or urllib3.exceptions.MaxRetryError or urllib3.exceptions.NewConnectionError or socket.gaierror:
 
             if facebook.GraphAPIError:
-                print("Token de acceso de página incorrecto o expirado.\nIntente ingresando un nuevo token.\nRecuerde que hay una explicacion en README.txt.")
-                token = input("Ingrese el nuevo token: ")    
+                print("\nToken de acceso de página incorrecto o expirado.\nIntente ingresando un nuevo token.\n\nRecuerde que hay una explicacion en actualizacion_token.pdf.")
+                token = input("\n\nIngrese el nuevo token: ")    
 
             else:
                 print("\n\nError de conexión.\nChequee que tenga conexión a internet e inténtelo nuevamente.")    
 
-        respuesta = chatbot.get_response(entrada)
-        bot = "Crux: " + str(respuesta) 
-        log(bot)
-        print("Crux: ",respuesta)
-
+        
 main()
