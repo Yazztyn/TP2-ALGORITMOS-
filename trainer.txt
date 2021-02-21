@@ -15,17 +15,21 @@ Hasta luego! Gracias por usar Crux AJ.
 salir
 Gracias por usar Crux, hasta la proxima!
 opciones
-Si desea hacer algo mas escriba lo que desea hacer.
+Si desea hacer algo mas escriba lo que desea hacer.Si desea salir escriba: "chau" o "salir".
 menu
-Si desea hacer algo mas escriba lo que desea hacer.
+Si desea hacer algo mas escriba lo que desea hacer.Si desea salir escriba: "chau" o "salir".
 menu de opciones
-Si desea hacer algo mas escriba lo que desea hacer.
+Si desea hacer algo mas escriba lo que desea hacer.Si desea salir escriba: "chau" o "salir".
 sabes un chiste
 No se ninguno hasta el momento.
 chiste
 No se ninguno hasta el momento.
 contame un chiste
 No se ninguno hasta el momento.
+quiero postear
+Unicamente se puede hacer posteos en Facebook, puede postear un texto o una foto. Si quiere postear en Facebook escriba postear foto fb o postear texto fb segun lo que desea. Si no, le puedo mostrar las opciones disponibles que tiene, para eso escriba menu, opciones o menu de opciones.
+quiero postear una foto
+Unicamente se pueden postear fotos en Facebook. Si quiere postear una foto en Facebook escriba postear foto fb. Si no, le puedo mostrar las opciones que tiene disponibles, para eso escriba menu, menu de opciones u opciones.
 postear
 Unicamente se puede hacer posteos en Facebook, puede postear un texto o una foto. Si quiere postear en Facebook escriba postear foto fb o postear texto fb segun lo que desea. Si no, le puedo mostrar las opciones disponibles que tiene, para eso escriba menu, opciones o menu de opciones.
 postear foto
@@ -70,6 +74,10 @@ cuantos años tenes
 Soy muy joven, apenas un mes y pico desde mi creacion :D
 que edad tenes
 Soy muy joven, apenas un mes desde mi creacion :D
+hora
+La hora actual es:
+fecha
+Hoy es:
 que hora es
 La hora actual es:
 que fecha es hoy
@@ -81,6 +89,6 @@ Mi nombre es Crux :)
 como es tu nombre
 Mi nombre es Crux :D
 listo
-Si desea hacer algo mas escriba lo que desea hacer.
+Si desea hacer algo mas escriba lo que desea hacer.Si desea salir escriba: "chau" o "salir".
 eso es todo
-Si desea hacer algo mas escriba lo que desea hacer.
+Si desea hacer algo mas escriba lo que desea hacer.Si desea salir escriba: "chau" o "salir".
