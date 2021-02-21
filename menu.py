@@ -137,71 +137,76 @@ def menu(token):
                 if eligio == 1:
                     
                     print("Usted eligió mostrar URL de un posteo.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     posteos = instagram_crux.media(token,id_instagram)
 
                     for diccionarios in range(len(posteos)):
-                        print((diccionarios) , ":" ,  posteos[diccionarios])
-                    eleccion_comentar = int(input("\nIngrese el número de posteo que desea comentar: "))
-                    while eleccion_comentar >  len(posteos)-1 or not str(eleccion_comentar).isnumeric():
-                        eleccion_comentar = int(input("\nIngrese un número valido: "))
-                    id_post = posteos[eleccion_comentar]["id"]
+                        print((diccionarios) , ":" ,  posteos[diccionarios]["id"])
+                    eleccion = int(input("\nIngrese el número de posteo que desea: "))
+                    while eleccion >  len(posteos)-1 or not str(eleccion).isnumeric():
+                        eleccion = int(input("\nIngrese un número valido: "))
+                    id_post = posteos[eleccion]["id"]
                     print(("Su eleccion fue: ") , id_post )
 
                     instagram_crux.mostrar_url(token,id_post)
+
+                    continuar = False
 
                 elif eligio == 2:
                     
                     print("Usted eligió mostrar la información de un posteo.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     posteos = instagram_crux.media(token,id_instagram)
 
                     for diccionarios in range(len(posteos)):
-                        print((diccionarios) , ":" ,  posteos[diccionarios])
-                    eleccion_comentar = int(input("\nIngrese el número de posteo que desea comentar: "))
-                    while eleccion_comentar >  len(posteos)-1 or not str(eleccion_comentar).isnumeric():
-                        eleccion_comentar = int(input("\nIngrese un número valido: "))
-                    id_post = posteos[eleccion_comentar]["id"]
+                        print((diccionarios) , ":" ,  posteos[diccionarios]["id"])
+                    eleccion = int(input("\nIngrese el número de posteo que desea: "))
+                    while eleccion >  len(posteos)-1 or not str(eleccion).isnumeric():
+                        eleccion = int(input("\nIngrese un número valido: "))
+                    id_post = posteos[eleccion]["id"]
                     print(("Su eleccion fue: ") , id_post )
 
                     instagram_crux.mostrar_mediatype(token,id_post)
-                    instagram_crux.mostrar_url(token,id_post)
                     instagram_crux.mostrar_owner(token,id_post)
                     instagram_crux.mostrar_comments(token,id_post)
                     instagram_crux.mostrar_likes(token,id_post)
                     instagram_crux.mostrar_tiempo(token,id_post)
 
+                    continuar = False
+
                 elif eligio == 3:
                     
                     print("\nUsted eligió mostrar cantidad de seguidores.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     instagram_crux.mostrar_followers(token,id_instagram)
+
+                    continuar = False
 
                 elif eligio == 4:
 
                     print("\nUsted eligió mostrar cantidad de seguidos.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     instagram_crux.mostrar_follows(token,id_instagram)
+
+                    continuar = False
 
                 elif eligio == 5:
 
                     print("\nUsted eligió mostar nombre,biografia y URL del perfil.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     instagram_crux.mostrar_biografia(token,id_instagram)
                     instagram_crux.mostrar_nombre(token,id_instagram)
-                    instagram_crux.mostrar_fotoperfil(token,id_instagram)    
+                    instagram_crux.mostrar_fotoperfil(token,id_instagram)
+
+                    continuar = False    
 
                 elif eligio == 6:
 
                     print("\nUsted eligió mostrar cantidad de posteos.")
-                    id_facebook = instagram_crux.id_pagina(token)
-                    id_instagram = instagram_crux.instagram(token,id_facebook)
+                    id_instagram = instagram_crux.instagram(token)
                     instagram_crux.mostrar_mediacount(token,id_instagram)
+
+                    continuar = False
 
                 while eligio > 6 or not str(eligio).isnumeric():
                     print("Error: El ingreso no es el correcto. Vuelva a intentarlo")
