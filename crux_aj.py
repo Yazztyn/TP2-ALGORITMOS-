@@ -166,12 +166,6 @@ def main():
                 mensaje = input("\nIngrese el texto que quiere comentar: ")
                 facebook_crux.comentar(token,mensaje,id)
 
-            else: 
-                respuesta = chatbot.get_response(entrada)
-                bot = "Crux: " + str(respuesta) 
-                log(bot)
-                print("\nCrux: ",respuesta)
-
         except facebook.GraphAPIError or requests.exceptions.ConnectionError or urllib3.exceptions.MaxRetryError or urllib3.exceptions.NewConnectionError or socket.gaierror:
 
             if facebook.GraphAPIError:
